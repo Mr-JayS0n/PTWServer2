@@ -14,3 +14,6 @@ Client server <- Backend Server <- Database
 
 **Library Required**
 -Using SignalR, Entity Framework, mySQL Server, Newtonsoft Json 
+
+**Client Required**
+-search from my Github profile, there is another project name called PTWClient1-SampleReference.
