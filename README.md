@@ -6,7 +6,8 @@ This PermitToWorkServer1-SampleReference is designed based on .NET,C# and Typesc
 client server to backend server, this backend server then is request the data from SQL server. Conversely, SQL server will send feedback to Server then to Client.
 
 Client server -> Backend Server -> Database 
-CLient server <- Backend Server <- Database
+
+Client server <- Backend Server <- Database
 
 **Software Required**
 -Visual Studio(.NET), Visual Studio Code(Angular), SQL(mySQL & SSMS 18)
