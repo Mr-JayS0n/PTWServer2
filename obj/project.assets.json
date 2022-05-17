@@ -6535,11 +6535,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Phang Jay Sern\\Desktop\\8208 Termasik\\Angular Project\\PTW\\PTWServer1-Progress\\PTWServer1.csproj",
+      "projectUniqueName": "C:\\Users\\Phang Jay Sern\\Desktop\\8208 Termasik\\Angular Project\\PTW-Progress(MAIN)\\PTWServer2-Progress(PTW)\\PTWServer1.csproj",
       "projectName": "PTWServer1",
-      "projectPath": "C:\\Users\\Phang Jay Sern\\Desktop\\8208 Termasik\\Angular Project\\PTW\\PTWServer1-Progress\\PTWServer1.csproj",
+      "projectPath": "C:\\Users\\Phang Jay Sern\\Desktop\\8208 Termasik\\Angular Project\\PTW-Progress(MAIN)\\PTWServer2-Progress(PTW)\\PTWServer1.csproj",
       "packagesPath": "C:\\Users\\Phang Jay Sern\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Phang Jay Sern\\Desktop\\8208 Termasik\\Angular Project\\PTW\\PTWServer1-Progress\\obj\\",
+      "outputPath": "C:\\Users\\Phang Jay Sern\\Desktop\\8208 Termasik\\Angular Project\\PTW-Progress(MAIN)\\PTWServer2-Progress(PTW)\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Phang Jay Sern\\AppData\\Roaming\\NuGet\\NuGet.Config",

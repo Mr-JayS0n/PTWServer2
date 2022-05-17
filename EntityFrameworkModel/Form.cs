@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace PTWServer1.EntityFrameworkModel
+namespace PTWServer1
 {
     public partial class Form
     {
-        public int? FormId { get; set; }
+        public int FormId { get; set; }
         public string FormName { get; set; }
-        public DateTime? FormDate { get; set; }
+        public DateTime FormDate { get; set; }
     }
 }

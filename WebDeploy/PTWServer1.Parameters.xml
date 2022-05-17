@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="myapp" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Phang\ Jay\ Sern\\Desktop\\8208\ Termasik\\Angular\ Project\\PTW-Progress\(MAIN\)\\PTWServer2-Progress\(PTW\)\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

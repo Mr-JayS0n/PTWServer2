@@ -80,7 +80,7 @@ namespace PTWServer1
                 endpoints.MapRazorPages();
                 //endpoint matching process can extract values from the request's URL and provide those values for request processing(HTTP)
                 endpoints.MapHub<ClientConnector>("/toastr");
-                endpoints.MapHub<StreamHub>("/streamHub");
+                //endpoints.MapHub<StreamHub>("/streamHub");
             });
         }
     }
