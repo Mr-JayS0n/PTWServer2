@@ -14,7 +14,6 @@ namespace PTWServer1.EntityFrameworkModel
 
         //Constructors
         #region
-  
         public crudDatabase(PTWDatabaseContext context)
         {
             ctx = context;

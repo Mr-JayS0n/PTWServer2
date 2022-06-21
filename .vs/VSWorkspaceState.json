@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CrudDatabase",
+    "\\CrudDatabase\\Create",
+    "\\CrudDatabase\\Read",
     "\\EntityFrameworkModel",
     "\\Properties"
   ],
-  "SelectedNode": "\\Startup.cs",
+  "SelectedNode": "\\PTWServer1.sln",
   "PreviewInSolutionExplorer": false
 }

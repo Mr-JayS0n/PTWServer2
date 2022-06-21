@@ -35,10 +35,11 @@ namespace PTWServer1
             string[,] formData = obj.dataToString(formInfo).showMatch(formInfo.ToString());
             //formData[0,0] = SelectedPermitType   
             //        [1,0] = isWorkAtHeight
-            //        [2,0] = isWorkAtHeight
+            //        [2,0] = isWorkAtHeight 
             Console.WriteLine("formvalue: " + formData[0,1]);
             crudDatabase crud = new crudDatabase(ctx);
-            //crud.readRecord();
+            //crud.
+            //;
             //temp comment(workable code)
             await crud.create(formData[0,1]);
             Console.WriteLine("testing");
@@ -144,6 +145,12 @@ namespace PTWServer1
         void convertString()
         {
 
+        }
+
+        
+        public async void findtheLastId(Form3 form)
+        {
+            await Clients.Caller.SendAsync("findthelastid", form);
         }
     }
 }

@@ -10,6 +10,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using PTWServer1.EntityFrameworkModel;
 using Microsoft.EntityFrameworkCore;
+using PTWServer1.CrudDatabase;
+using PTWServer1.CrudDatabase.Read;
 
 
 
@@ -79,7 +81,10 @@ namespace PTWServer1
             {
                 endpoints.MapRazorPages();
                 //endpoint matching process can extract values from the request's URL and provide those values for request processing(HTTP)
-                endpoints.MapHub<ClientConnector>("/toastr");
+
+                //endpoints.MapHub<ClientConnector>("/toastr");
+                
+                endpoints.MapHub<CRUDManager>("/toastr");
                 //endpoints.MapHub<StreamHub>("/streamHub");
             });
         }

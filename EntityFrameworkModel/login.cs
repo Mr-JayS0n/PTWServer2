@@ -23,7 +23,7 @@ namespace PTWServer1.EntityFrameworkModel
 
             if (formObj != null)
             {
-                Console.WriteLine(formObj.Id);
+                Console.WriteLine("formid"+formObj.Id);
                 return formObj;
             }
             return null;
