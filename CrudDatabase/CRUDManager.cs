@@ -45,7 +45,7 @@ namespace PTWServer1.CrudDatabase
                     }
                     else if (_readList.Substring(0, 11) == "callread002")
                     {
-                        //Console.WriteLine("callread002");
+                        Console.WriteLine("callread002");
                         await Clients.Caller.SendAsync("hconnection_read_RTL_Details", _readList);
                     }
                     break; 
