@@ -37,8 +37,17 @@ namespace PTWServer1.CrudDatabase
                     Console.WriteLine("ReadForm");
                     ReadForm readForm = new ReadForm(ctx);
                     _readList = readForm.caller_read(subfunction_Name[1], int.Parse(data.ToString()));
-                    Console.WriteLine(_readList);                
-                    await Clients.Caller.SendAsync("hconnection_read_RTL", _readList);
+                    Console.WriteLine(_readList);
+
+                    if (_readList.Substring(0, 11) == "callread001")
+                    {
+                        await Clients.Caller.SendAsync("hconnection_read_RTL", _readList);
+                    }
+                    else if (_readList.Substring(0, 11) == "callread002")
+                    {
+                        //Console.WriteLine("callread002");
+                        await Clients.Caller.SendAsync("hconnection_read_RTL_Details", _readList);
+                    }
                     break; 
             }
         }

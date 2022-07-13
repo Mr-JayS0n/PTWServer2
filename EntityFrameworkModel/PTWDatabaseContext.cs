@@ -8,6 +8,7 @@ namespace PTWServer1
 {
     public partial class PTWDatabaseContext : DbContext
     {
+
         public PTWDatabaseContext(DbContextOptions<PTWDatabaseContext> options)
             : base(options)
         {
@@ -25,7 +26,7 @@ namespace PTWServer1
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=(local);initial catalog=PTWDatabase;trusted_connection=yes;");
+                optionsBuilder.UseSqlServer("Data Source=(local);initial catalog=PTWDatabase; trusted_connection=yes;");
             }
         }
 
@@ -227,95 +228,185 @@ namespace PTWServer1
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.C21a).HasColumnName("_c21a");
+                entity.Property(e => e.C21a)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21a");
 
-                entity.Property(e => e.C21b).HasColumnName("_c21b");
+                entity.Property(e => e.C21b)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21b");
 
-                entity.Property(e => e.C21c).HasColumnName("_c21c");
+                entity.Property(e => e.C21c)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21c");
 
-                entity.Property(e => e.C21d).HasColumnName("_c21d");
+                entity.Property(e => e.C21d)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21d");
 
-                entity.Property(e => e.C21e).HasColumnName("_c21e");
+                entity.Property(e => e.C21e)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21e");
 
-                entity.Property(e => e.C21f).HasColumnName("_c21f");
+                entity.Property(e => e.C21f)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21f");
 
-                entity.Property(e => e.C21g).HasColumnName("_c21g");
+                entity.Property(e => e.C21g)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21g");
 
-                entity.Property(e => e.C21h).HasColumnName("_c21h");
+                entity.Property(e => e.C21h)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21h");
 
-                entity.Property(e => e.C21i).HasColumnName("_c21i");
+                entity.Property(e => e.C21i)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21i");
 
-                entity.Property(e => e.C21j).HasColumnName("_c21j");
+                entity.Property(e => e.C21j)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21j");
 
-                entity.Property(e => e.C21k).HasColumnName("_c21k");
+                entity.Property(e => e.C21k)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21k");
 
-                entity.Property(e => e.C21l).HasColumnName("_c21l");
+                entity.Property(e => e.C21l)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21l");
 
-                entity.Property(e => e.C21m).HasColumnName("_c21m");
+                entity.Property(e => e.C21m)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21m");
 
-                entity.Property(e => e.C21n).HasColumnName("_c21n");
+                entity.Property(e => e.C21n)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c21n");
 
-                entity.Property(e => e.C22a).HasColumnName("_c22a");
+                entity.Property(e => e.C22a)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c22a");
 
-                entity.Property(e => e.C22b).HasColumnName("_c22b");
+                entity.Property(e => e.C22b)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c22b");
 
-                entity.Property(e => e.C22c).HasColumnName("_c22c");
+                entity.Property(e => e.C22c)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c22c");
 
-                entity.Property(e => e.C22d).HasColumnName("_c22d");
+                entity.Property(e => e.C22d)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c22d");
 
-                entity.Property(e => e.C22e).HasColumnName("_c22e");
+                entity.Property(e => e.C22e)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c22e");
 
-                entity.Property(e => e.C22f).HasColumnName("_c22f");
+                entity.Property(e => e.C22f)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c22f");
 
-                entity.Property(e => e.C22g).HasColumnName("_c22g");
+                entity.Property(e => e.C22g)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c22g");
 
-                entity.Property(e => e.C23a).HasColumnName("_c23a");
+                entity.Property(e => e.C23a)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c23a");
 
-                entity.Property(e => e.C23b).HasColumnName("_c23b");
+                entity.Property(e => e.C23b)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c23b");
 
-                entity.Property(e => e.C23c).HasColumnName("_c23c");
+                entity.Property(e => e.C23c)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c23c");
 
-                entity.Property(e => e.C23d).HasColumnName("_c23d");
+                entity.Property(e => e.C23d)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c23d");
 
-                entity.Property(e => e.C23e).HasColumnName("_c23e");
+                entity.Property(e => e.C23e)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c23e");
 
-                entity.Property(e => e.C23f).HasColumnName("_c23f");
+                entity.Property(e => e.C23f)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c23f");
 
-                entity.Property(e => e.C23g).HasColumnName("_c23g");
+                entity.Property(e => e.C23g)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c23g");
 
-                entity.Property(e => e.C24a).HasColumnName("_c24a");
+                entity.Property(e => e.C24a)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c24a");
 
-                entity.Property(e => e.C24b).HasColumnName("_c24b");
+                entity.Property(e => e.C24b)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c24b");
 
-                entity.Property(e => e.C24c).HasColumnName("_c24c");
+                entity.Property(e => e.C24c)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c24c");
 
-                entity.Property(e => e.C24d).HasColumnName("_c24d");
+                entity.Property(e => e.C24d)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c24d");
 
-                entity.Property(e => e.C24e).HasColumnName("_c24e");
+                entity.Property(e => e.C24e)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c24e");
 
-                entity.Property(e => e.C24f).HasColumnName("_c24f");
+                entity.Property(e => e.C24f)
+                    .HasMaxLength(30)
+                    .HasColumnName("_c24f");
 
-                entity.Property(e => e.W21).HasColumnName("_w21");
+                entity.Property(e => e.W21)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w21");
 
-                entity.Property(e => e.W22).HasColumnName("_w22");
+                entity.Property(e => e.W22)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w22");
 
-                entity.Property(e => e.W23).HasColumnName("_w23");
+                entity.Property(e => e.W23)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w23");
 
-                entity.Property(e => e.W24a).HasColumnName("_w24a");
+                entity.Property(e => e.W24a)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w24a");
 
-                entity.Property(e => e.W24b).HasColumnName("_w24b");
+                entity.Property(e => e.W24b)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w24b");
 
-                entity.Property(e => e.W24c).HasColumnName("_w24c");
+                entity.Property(e => e.W24c)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w24c");
 
-                entity.Property(e => e.W24d).HasColumnName("_w24d");
+                entity.Property(e => e.W24d)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w24d");
 
-                entity.Property(e => e.W25).HasColumnName("_w25");
+                entity.Property(e => e.W25)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w25");
 
-                entity.Property(e => e.W26).HasColumnName("_w26");
+                entity.Property(e => e.W26)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w26");
 
-                entity.Property(e => e.W27).HasColumnName("_w27");
+                entity.Property(e => e.W27)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w27");
 
-                entity.Property(e => e.W28).HasColumnName("_w28");
+                entity.Property(e => e.W28)
+                    .HasMaxLength(30)
+                    .HasColumnName("_w28");
 
                 entity.Property(e => e.W29)
                     .HasMaxLength(30)
@@ -325,7 +416,9 @@ namespace PTWServer1
 
                 entity.Property(e => e._1b).HasMaxLength(50);
 
-                entity.Property(e => e._1c).HasMaxLength(30);
+                entity.Property(e => e._1c1).HasMaxLength(30);
+
+                entity.Property(e => e._1c2).HasMaxLength(30);
 
                 entity.Property(e => e._1d).HasMaxLength(30);
 

@@ -28,16 +28,12 @@ namespace PTWServer1.CrudDatabase.Create
                     Console.WriteLine("receiver_create_PTWForm");
                     CreatePTWForm createPTWForm = new CreatePTWForm(ctx);
                     Console.WriteLine("FormInfo: " + form_Info);
-                    createPTWForm.regexPTWForm(form_Info);
-                    
-                    //v1 
-                    //createPTWForm.regexPTWForm(form_Info);
-                    
-                    //createPTWForm.generatePTWForm(form_Info);
+                    string[,] array2D = createPTWForm.regexPTWForm(form_Info);  //run regular expression for data cleansing
+                    createPTWForm.generatePTWForm(array2D);                     //insert the necessary data into database
                     break;
 
             }
-        }
+        }  
         
         
  
